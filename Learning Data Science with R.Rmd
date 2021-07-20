@@ -1,0 +1,52 @@
+---
+title: "Learning R Data Science"
+output: html_notebook
+---
+
+# Library
+
+```{r}
+library(devtools) # is needed to install from the Github repository
+```
+
+
+# Week 2: R and RStudio
+
+Learning basic commands like creating a matrix.
+```{r}
+example <- matrix(c(1,2,3,4,5,6,7,8), nrow = 4, ncol = 2)
+```
+
+Checking packages that need updating
+```{r}
+old.packages()
+update.packages()
+```
+
+To unload or remove packages 
+```{r}
+detach()
+remove.packages()
+```
+
+To check R version
+```{r}
+version
+sessionInfo()
+```
+
+To get help
+```{r}
+help(package = devtools)
+browseVignettes("ggplot2")
+```
+
+To get a list of functions for a package
+```{r}
+x <- library(help = devtools) #lists the functions in the devtools package
+x$info[[2]] #lists the functions in the devtools package 
+```
+
+# Week 3: Version control
+
+
